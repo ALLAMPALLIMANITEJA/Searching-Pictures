@@ -7,7 +7,10 @@ This is a user firendly website where user can Search for the images
 The user can search for the images they want for exmaple cars,bikes,trees etc.
 ![Screenshot (61)](https://github.com/user-attachments/assets/46846c90-347b-4264-9be3-53cb2f87be30)
 After submitting the user will get the images of it.
-![Screenshot 2024-10-02 124330](https://github.com/user-attachments/assets/95ffe380-dc75-4d40-b433-0af9e10d4812)
+
+
+![Screenshot 2024-10-02 124330](https://github.com/user-attachments/assets/37ff16cc-d97a-49f6-b8dc-5c04fc7b318d)
+
 
 
 
