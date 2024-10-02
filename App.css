@@ -1,0 +1,159 @@
+
+
+/* Body and General Styling */
+body {
+  background-color: #f0f0f0; /* Light background color */
+  font-family: Arial, sans-serif; /* Consistent font */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Add padding around the page */
+}
+
+/* Header Box Styling */
+header {
+  background-color: #ffffff; /* White background for the header */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  text-align: center; /* Center align text */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+/* Updated styles for Gallery */
+.gallery {
+  display: flex; /* Use flexbox to arrange images */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  justify-content: space-around; /* Distribute space evenly between images */
+  padding: 10px; /* Optional: add padding around the gallery */
+  background-color: white; /* White background for the gallery */
+  border-radius: 10px; /* Rounded corners for the gallery */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.image-container {
+  flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+  margin: 10px; /* Margin around each image container */
+  display: flex; /* Center the image */
+  justify-content: center; /* Center the image horizontally */
+  background-color: #f9f9f9; /* Light background for image containers */
+  border-radius: 8px; /* Rounded corners for image containers */
+  overflow: hidden; /* Prevent overflow of images */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: transform 0.3s; /* Smooth transform for hover effect */
+}
+
+.image-container:hover {
+  transform: scale(1.02); /* Slightly enlarge the container on hover */
+}
+
+/* General image styling with hover effects */
+.images {
+  width: 100%; /* Make images responsive to container size */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.images:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Text input styling with focus effect */
+input[type="text"] {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #61dafb;
+  box-shadow: 0 0 5px rgba(97, 218, 251, 0.8); /* Light blue glow */
+  outline: none;
+}
+
+/* Submit button with hover and active effects */
+input[type="submit"] {
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff4d4d; /* Lighter red on hover */
+  transform: translateY(-3px); /* Lift the button */
+}
+
+input[type="submit"]:active {
+  transform: translateY(0); /* Reset the lift on click */
+  background-color: #cc0000; /* Darker red on click */
+}
+
+/* Heading with stylish underline */
+.heading {
+  color: red;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.heading::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: red;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.heading:hover::after {
+  width: 100%; /* Full underline on hover */
+}
+
+/* Side heading styling with animation */
+.sideHeading {
+  color: blue;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: left;
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: slideIn 0.5s forwards;
+}
+
+/* Slide in animation for side headings */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  input[type="text"] {
+    width: 80%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .sideHeading {
+    font-size: 16px;
+  }
+}
